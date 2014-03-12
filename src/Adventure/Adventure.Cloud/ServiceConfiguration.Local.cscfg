@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Adventure.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="StorageRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="CloudConnectionString" value="UseDevelopmentStorage=true" />
+      <!--<Setting name="Two10.MongoDB.ConnectionString" value="" />
+      <Setting name="Two10.MongoDB.ReplicaSetName" value="" />
+      <Setting name="Two10.MongoDB.VHDSize" value="" />-->
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="Adventure.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-10.2.2">
+  <WorkerRole name="StorageRole" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+      <!--<Import moduleName="MongoDB" />-->
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="CloudConnectionString" />
+    </ConfigurationSettings>
+  </WorkerRole>
+</ServiceDefinition>
